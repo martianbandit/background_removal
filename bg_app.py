@@ -4,12 +4,12 @@ from PIL import Image
 from io import BytesIO
 import base64
 
-st.set_page_config(layout="wide", page_title="Supprime Arriere-plan")
+st.set_page_config(layout="wide",page_icon="LE CATS MALIN.png" page_title="Supprime Arriere-plan")
 
 st.write("## Cet outils supprime l'arrière plan d'une image que vous telecharger")
 st.write(
-    """:dog: Essayez de telecharger une image pour voir l’arriere-plan supprimer comme par magie. Des images en pleine qualite peuvent être téléchargees 
-    à partir de la barre laterale. remerciments a la [bibliotheque rembg ](https://github.com/danielgatis/rembg) :grin:"""
+    ":dog: rainbow:[Essayez de telecharger une image pour voir l’arriere-plan supprimer comme par magie. Des images en pleine qualite peuvent être téléchargees 
+    à partir de la barre laterale. remerciments a la [bibliotheque rembg ](https://github.com/danielgatis/rembg):grin:]" 
 )
 st.sidebar.write("## Upload et download :gear:")
 
