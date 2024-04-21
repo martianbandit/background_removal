@@ -4,12 +4,11 @@ from PIL import Image
 from io import BytesIO
 import base64
 
-st.set_page_config(layout="wide",page_icon="LE CATS MALIN.png" page_title="Supprime Arriere-plan")
+st.set_page_config(layout="wide", page_icon="LE CATS MALIN.png", page_title="Supprime Arriere-plan")
 
-st.write("## Cet outils supprime l'arrière plan d'une image que vous telecharger")
+st.write("## rainbow:[Cet outils supprime l'arrière plan d'une image que vous telecharger]")
 st.write(
-    ":dog: rainbow:[Essayez de telecharger une image pour voir l’arriere-plan supprimer comme par magie. Des images en pleine qualite peuvent être téléchargees 
-    à partir de la barre laterale. remerciments a la [bibliotheque rembg ](https://github.com/danielgatis/rembg):grin:]" 
+    ":dog: rainbow:[Essayez de telecharger une image pour voir l’arriere-plan supprimer comme par magie. Des images en pleine qualite peuvent être téléchargees  à partir de la barre laterale. remerciments a la [bibliotheque rembg ](https://github.com/danielgatis/rembg)]:grin:" 
 )
 st.sidebar.write("## Upload et download :gear:")
 
@@ -32,7 +31,7 @@ def fix_image(upload):
     col2.write("Image sans arrière plan :wrench:")
     col2.image(fixed)
     st.sidebar.markdown("\n")
-    st.sidebar.download_button("telecharger votre image sans arriere plan", convert_image(fixed), "fixed.png", "image/png")
+    st.sidebar.download_button("telecharger votre image sans arriere plan", convert_image(fixed), "ima_convert.png", "image/png")
 
 
 col1, col2 = st.columns(2)
@@ -44,4 +43,4 @@ if my_upload is not None:
     else:
         fix_image(upload=my_upload)
 else:
-    fix_image("./LE CATS MALIN.png"
+    fix_image("./LE CATS MALIN.png")
