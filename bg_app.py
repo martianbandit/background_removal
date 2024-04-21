@@ -33,11 +33,11 @@ def fix_image(upload):
     col2.write("Image sans arrière plan :wrench:")
     col2.image(fixed)
     st.sidebar.markdown("\n")
-    st.sidebar.download_button("telecharger votre image sans arriere plan", convert_image(fixed), "ima_convert.png", "image/png")
+    st.sidebar.download_button("Télécharger ici :arrowup: votre image modifié", convert_image(fixed), "ima_convert.png", "image/png")
 
 
 col1, col2 = st.columns(2)
-my_upload = st.sidebar.file_uploader("telecharger une image depuis votre ordinateur:", type=["png", "jpg", "jpeg"])
+my_upload = st.sidebar.file_uploader("Déposer une image depuis votre ordinateur:", type=["png", "jpg", "jpeg"])
 
 if my_upload is not None:
     if my_upload.size > MAX_FILE_SIZE:
