@@ -10,6 +10,8 @@ st.write("## rainbow:[Cet outils supprime l'arrière plan d'une image que vous t
 st.write(
     ":dog: rainbow:[Essayez de telecharger une image pour voir l’arriere-plan supprimer comme par magie. Des images en pleine qualite peuvent être téléchargees  à partir de la barre laterale. remerciments a la [bibliotheque rembg ](https://github.com/danielgatis/rembg)]:grin:" 
 )
+st.sidebar.image("image001-1specvrac.jpg")
+
 st.sidebar.write("## Upload et download :gear:")
 
 MAX_FILE_SIZE = 5 * 1024 * 1024  # 5MB
